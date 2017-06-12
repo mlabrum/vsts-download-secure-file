@@ -1,0 +1,45 @@
+{
+  "manifestVersion": 1,
+  "id": "build-task",
+  "name": "Download Secure File",
+  "version": "0.0.1",
+  "publisher": "mattlabrum",
+  "targets": [
+	{
+	  "id": "Microsoft.VisualStudio.Services"
+	}
+  ],
+  "description": "Downloads a secure file",
+  "categories": [
+	"Build and release"
+  ],
+  "icons": {
+	"default": "images/extension-icon.png"
+  },
+  "content": {
+	"details": {
+	  "path": "readme.md"
+	}
+  },
+  "repository": {
+	"type": "git",
+	"uri": "https://github.com/fabrikam-fiber-inc/myextension"
+  },
+  "files": [
+	{
+	  "path": "buildtask"
+	}
+  ],
+  "contributions": [
+	{
+	  "id": "custom-build-task",
+	  "type": "ms.vss-distributed-task.task",
+	  "targets": [
+		"ms.vss-distributed-task.tasks"
+	  ],
+	  "properties": {
+		"name": "buildtask"
+	  }
+	}
+  ]
+}

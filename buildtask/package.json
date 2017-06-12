@@ -1,0 +1,16 @@
+{
+  "name": "vs-download-secure-file",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "upload": "tfx build tasks upload --task-path ."
+  },
+  "dependencies": {
+    "vso-node-api": "^6.2.3-preview",
+    "vsts-task-lib": "^2.0.5"
+  },
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC"
+}
