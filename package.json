@@ -1,0 +1,19 @@
+{
+  "name": "vs-download-secure-file",
+  "version": "1.0.0",
+  "description": "Allows you to download a secure file from VSTS to your build agent",
+  "main": "index.js",
+  "scripts": {
+    "build": "tfx extension create --manifest-globs vss-extension.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mlabrum/vsts-download-secure-file.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mlabrum/vsts-download-secure-file/issues"
+  },
+  "homepage": "https://github.com/mlabrum/vsts-download-secure-file#readme"
+}

@@ -2,8 +2,9 @@
   "manifestVersion": 1,
   "id": "build-task",
   "name": "Download Secure File",
-  "version": "0.0.1",
+  "version": "0.0.6",
   "publisher": "mattlabrum",
+  "public": true,
   "targets": [
 	{
 	  "id": "Microsoft.VisualStudio.Services"
@@ -12,6 +13,14 @@
   "description": "Downloads a secure file",
   "categories": [
 	"Build and release"
+  ],
+  "screenshots": [
+	{
+	  "path": "screenshots/options.png"
+	}
+  ],
+  "scopes": [
+	"vso.build"
   ],
   "icons": {
 	"default": "images/extension-icon.png"
