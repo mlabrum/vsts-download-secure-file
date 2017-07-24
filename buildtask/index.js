@@ -3,8 +3,9 @@ const vsts = require('vso-node-api');
 const fs = require('fs');
 const path = require('path');
 
+const serverUrl = tl.getVariable('System.TeamFoundationCollectionUri');
 const restAPI = new vsts.WebApi(
-	tl.getEndpointUrl('SYSTEMVSSCONNECTION', false),
+	serverUrl,
 	vsts.getPersonalAccessTokenHandler(tl.getEndpointAuthorizationParameter('SYSTEMVSSCONNECTION', 'ACCESSTOKEN', false))
 );
 
